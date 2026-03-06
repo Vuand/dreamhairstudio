@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import { BOOKING_URL } from "@/lib/constants";
 
 export default function FinalCTA() {

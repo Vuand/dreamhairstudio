@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ReviewCard from "@/components/ui/ReviewCard";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import { REVIEWS, BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {

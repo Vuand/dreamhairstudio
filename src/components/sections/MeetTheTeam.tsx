@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import StaffCard from "@/components/ui/StaffCard";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import { STAFF } from "@/lib/constants";
 
 const container = {

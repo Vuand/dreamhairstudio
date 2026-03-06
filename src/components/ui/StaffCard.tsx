@@ -1,6 +1,6 @@
 import type { StaffMember } from "@/types";
 import ImagePlaceholder from "./ImagePlaceholder";
-import Button from "./Button";
+import Button from "./CTAButton";
 
 interface StaffCardProps {
   staff: StaffMember;
@@ -16,7 +16,7 @@ export default function StaffCard({ staff }: StaffCardProps) {
   const firstName = staff.name.split(" ")[0].replace(/["]/g, "");
 
   return (
-    <div className="group bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-card-border/40 hover:border-brand-gold/20">
+    <div className="group h-full flex flex-col bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-card-border/40 hover:border-brand-gold/20">
       <div className="aspect-[3/4] w-full relative overflow-hidden">
         <ImagePlaceholder
           initials={initials}
@@ -26,7 +26,7 @@ export default function StaffCard({ staff }: StaffCardProps) {
         {/* Gradient overlay at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-card to-transparent" />
       </div>
-      <div className="p-6 -mt-4 relative">
+      <div className="p-6 -mt-4 relative flex flex-col flex-1">
         <div className="flex items-start justify-between">
           <div>
             <h3 className="text-xl font-serif font-bold text-brand-dark">
@@ -53,11 +53,11 @@ export default function StaffCard({ staff }: StaffCardProps) {
           </div>
         )}
 
-        <p className="text-warm-gray text-sm mt-3 leading-relaxed font-sans line-clamp-3">
+        <p className="text-warm-gray text-sm mt-3 leading-relaxed font-sans">
           {staff.bio}
         </p>
 
-        <div className="mt-5">
+        <div className="mt-auto pt-5">
           <Button
             href={staff.bookingUrl}
             variant="primary"

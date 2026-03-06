@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
+import { FloatingPaths } from "@/components/ui/background-paths";
 import { BOOKING_URL } from "@/lib/constants";
 
 export default function HeroSection() {
@@ -30,6 +31,12 @@ export default function HeroSection() {
         {/* Gradient overlays — cinematic feel */}
         <div className="absolute inset-0 bg-gradient-to-br from-dark-surface via-dark-surface/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-surface via-transparent to-dark-surface/40" />
+
+        {/* Animated SVG background paths */}
+        <div className="absolute inset-0 opacity-20">
+          <FloatingPaths position={1} className="w-full h-full text-brand-gold" />
+          <FloatingPaths position={-1} className="w-full h-full text-brand-gold" />
+        </div>
 
         {/* Decorative floating chevrons */}
         <motion.div

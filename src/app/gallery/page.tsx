@@ -3,7 +3,7 @@ import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import { BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {

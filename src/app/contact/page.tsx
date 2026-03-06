@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GoogleMap from "@/components/embeds/GoogleMap";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import {
   BUSINESS_INFO,
   BUSINESS_HOURS,

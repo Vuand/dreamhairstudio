@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 
 const galleryImages = [
   { src: "/images/haircutpic1.jpeg", alt: "Professional haircut style 1" },

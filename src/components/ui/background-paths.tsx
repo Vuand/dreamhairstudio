@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-function FloatingPaths({ position }: { position: number }) {
+export function FloatingPaths({ position, className }: { position: number; className?: string }) {
     const paths = Array.from({ length: 36 }, (_, i) => ({
         id: i,
         d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
@@ -20,7 +20,7 @@ function FloatingPaths({ position }: { position: number }) {
     return (
         <div className="absolute inset-0 pointer-events-none">
             <svg
-                className="w-full h-full text-slate-950 dark:text-white"
+                className={className || "w-full h-full text-slate-950 dark:text-white"}
                 viewBox="0 0 696 316"
                 fill="none"
             >

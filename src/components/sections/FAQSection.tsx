@@ -3,7 +3,7 @@
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import { FAQ_ITEMS } from "@/lib/constants";
 
 export default function FAQSection() {

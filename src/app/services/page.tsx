@@ -3,7 +3,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ServiceCard from "@/components/ui/ServiceCard";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import ChevronDivider from "@/components/ui/ChevronDivider";
 import { SERVICES, FAQ_ITEMS, BOOKING_URL } from "@/lib/constants";
 import { getFAQJsonLd } from "@/lib/metadata";

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import { SERVICES, FEATURED_SERVICES, BOOKING_URL } from "@/lib/constants";
 
 const container = {

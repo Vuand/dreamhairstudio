@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/CTAButton";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import { BOOKING_URL } from "@/lib/constants";
 
