@@ -34,18 +34,20 @@
   --card-shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--surface-primary);
   color: var(--text-primary);
   font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), Georgia, serif;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* Noise texture */

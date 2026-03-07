@@ -34,8 +34,9 @@ export default function Header() {
 
   return (
     <>
+      {/* Header — z-[70] so it always sits above the mobile overlay */}
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-[70] transition-all duration-500 ${
           scrolled
             ? "bg-header-scrolled shadow-2xl"
             : "bg-header-bg"
@@ -95,7 +96,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile menu — rendered outside header to avoid fixed-inside-fixed issues */}
+      {/* Mobile menu overlay — below header (z-[60]) */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -111,7 +112,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ delay: 0.1, duration: 0.3 }}
-              className="flex flex-col items-center justify-center h-full gap-6 -mt-16"
+              className="flex flex-col items-center justify-center h-full gap-6 -mt-8"
             >
               {navLinks.map((link, i) => (
                 <motion.div
