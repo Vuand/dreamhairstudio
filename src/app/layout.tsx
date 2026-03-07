@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { cormorantGaramond, dmSans } from "@/lib/fonts";
 import { getLocalBusinessJsonLd } from "@/lib/metadata";
-import { ThemeProvider } from "@/lib/theme";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MobileBookNow from "@/components/layout/MobileBookNow";
@@ -43,14 +42,8 @@ export default function RootLayout({
   const jsonLd = getLocalBusinessJsonLd();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        {/* Prevent flash of wrong theme */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t)}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}})()`,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -59,12 +52,10 @@ export default function RootLayout({
       <body
         className={`${cormorantGaramond.variable} ${dmSans.variable} antialiased`}
       >
-        <ThemeProvider>
-          <Header />
-          <main className="pt-16 md:pt-20 pb-16 lg:pb-0">{children}</main>
-          <Footer />
-          <MobileBookNow />
-        </ThemeProvider>
+        <Header />
+        <main className="pt-16 md:pt-20 pb-16 lg:pb-0">{children}</main>
+        <Footer />
+        <MobileBookNow />
       </body>
     </html>
   );

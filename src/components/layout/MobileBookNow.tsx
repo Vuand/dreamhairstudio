@@ -23,7 +23,7 @@ export default function MobileBookNow() {
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="fixed bottom-0 left-0 right-0 z-50 lg:hidden"
         >
-          <div className="bg-dark-surface/95 backdrop-blur-md border-t border-white/10 px-4 py-3">
+          <div className="bg-dark-surface border-t border-white/10 px-4 py-3">
             <a
               href={BOOKING_URL}
               target="_blank"

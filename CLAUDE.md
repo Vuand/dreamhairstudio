@@ -14,22 +14,16 @@ Complete website for **Dream Hair Studio**, a hair salon and barbershop in Corva
 ## Brand Design System
 
 ### Colors
-- **Light mode**: Cream background `#f7f5f3`, white cards `#ffffff`, warm grays for text
-- **Dark mode**: Near-black background `#0c0c0c`, dark cards `#161616`
+- **Background**: Cream `#f7f5f3`, white cards `#ffffff`, warm grays for text
 - **Brand red** (CTAs): `#c1272d`
 - **Brand gold** (accents): `#d4a574`
-- **Dark surface** (hero, footer, header): stays dark in both modes (`#1a1a1a` light / `#111111` dark)
-
-### Theme System
-- CSS custom properties in `globals.css` with `:root` (light) and `[data-theme="dark"]` selectors
-- `ThemeProvider` in `src/lib/theme.tsx` with localStorage persistence + system preference detection
-- Flash-prevention inline script in `<head>` reads localStorage before React hydrates
-- `<html lang="en" suppressHydrationWarning>` to avoid hydration mismatch
+- **Dark surface** (hero, footer, header): `#1a1a1a`
+- **No dark mode** — light theme only
 
 ### Semantic Tokens (used throughout components)
 - `bg-cream` / `bg-cream-dark` - page backgrounds
-- `bg-card` / `border-card-border` - theme-aware cards
-- `text-brand-dark` - primary text (swaps per theme)
+- `bg-card` / `border-card-border` - cards
+- `text-brand-dark` - primary text
 - `text-warm-gray` / `text-warm-gray-light` - secondary/tertiary text
 - `bg-dark-surface` - always-dark sections (hero, footer, final CTA)
 - `bg-header-bg` / `bg-header-scrolled` - header backgrounds
@@ -104,7 +98,7 @@ src/
   app/
     layout.tsx          # Root layout: fonts, metadata, JSON-LD, ThemeProvider, Header, Footer
     page.tsx            # Home page
-    globals.css         # Tailwind + theme system + base styles
+    globals.css         # Tailwind + base styles
     about/page.tsx
     staff/page.tsx
     services/page.tsx
@@ -116,7 +110,7 @@ src/
     robots.ts
   components/
     layout/
-      Header.tsx        # Sticky dark header, nav, mobile hamburger, ThemeToggle, Book Now
+      Header.tsx        # Sticky dark header, nav, mobile hamburger, Book Now
       Footer.tsx        # Dark footer, 4-col grid (brand, links, hours, contact)
       MobileBookNow.tsx # Sticky bottom bar on mobile (hidden on desktop)
     ui/
@@ -130,7 +124,6 @@ src/
       AnimatedSection.tsx # Scroll-triggered fade/slide with direction prop
       FAQAccordion.tsx  # Expandable accordion with framer-motion
       ImagePlaceholder.tsx # Gradient placeholder with initials for missing photos
-      ThemeToggle.tsx   # Animated sun/moon toggle
       background-paths.tsx # SVG animated paths (shadcn)
     sections/
       HeroSection.tsx
@@ -150,7 +143,6 @@ src/
     constants.ts        # ALL business data (single source of truth)
     metadata.ts         # LocalBusiness + FAQ JSON-LD schema generators
     fonts.ts            # next/font definitions
-    theme.tsx           # ThemeProvider context + useTheme hook
     utils.ts            # cn() utility (clsx + tailwind-merge)
   types/
     index.ts            # TypeScript interfaces for all data types
@@ -181,7 +173,7 @@ Consistent call-to-action buttons used throughout the site:
 
 ## Key Conventions
 - All business data changes go through `src/lib/constants.ts` only
-- Theme-aware components use semantic tokens (`bg-card`, `text-brand-dark`, etc.), never raw colors
+- Components use semantic tokens (`bg-card`, `text-brand-dark`, etc.), never raw colors
 - Always-dark sections use `bg-dark-surface` (hero, footer, final CTA, mobile book bar)
 - Scroll animations use `AnimatedSection` wrapper with optional `direction` and `delay` props
 - Framer Motion variants use `ease: [0.25, 0.1, 0.25, 1] as const` for type safety
