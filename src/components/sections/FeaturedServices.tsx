@@ -22,7 +22,7 @@ export default function FeaturedServices() {
   );
 
   return (
-    <section className="py-24 px-4 sm:px-6 relative">
+    <section className="py-14 px-4 sm:px-6 relative">
       {/* Subtle background texture */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
         backgroundImage: `radial-gradient(circle at 1px 1px, var(--color-brand-dark) 1px, transparent 0)`,
@@ -54,14 +54,14 @@ export default function FeaturedServices() {
               {/* Hover accent */}
               <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-brand-gold to-brand-gold-light scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
-              <h4 className="font-sans font-medium text-brand-dark text-sm leading-snug">
+              <h4 className="font-sans font-medium text-brand-dark text-base leading-snug">
                 {service.name}
               </h4>
-              <p className="text-brand-red font-serif font-bold text-2xl mt-2 italic">
+              <p className="text-brand-red font-serif font-bold text-3xl mt-2 italic">
                 {service.price}
               </p>
               {service.description && (
-                <p className="text-warm-gray-light text-xs mt-2 font-sans">
+                <p className="text-warm-gray-light text-sm mt-2 font-sans">
                   {service.description}
                 </p>
               )}

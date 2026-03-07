@@ -46,7 +46,7 @@ const card = {
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 px-4 sm:px-6 relative overflow-hidden">
+    <section className="py-14 px-4 sm:px-6 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-cream-dark/30 via-cream to-cream-dark/30" />
 
@@ -75,10 +75,10 @@ export default function WhyChooseUs() {
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-gold/15 to-brand-gold/5 flex items-center justify-center text-brand-gold mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FeatureIcon icon={item.icon} />
               </div>
-              <h3 className="font-serif text-lg font-bold text-brand-dark mb-2">
+              <h3 className="font-serif text-xl font-bold text-brand-dark mb-2">
                 {item.title}
               </h3>
-              <p className="text-warm-gray font-sans text-sm leading-relaxed">
+              <p className="text-warm-gray font-sans text-base leading-relaxed">
                 {item.description}
               </p>
             </motion.div>

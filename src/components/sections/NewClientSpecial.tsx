@@ -30,7 +30,7 @@ export default function NewClientSpecial() {
               <h3 className="text-white font-serif text-3xl md:text-4xl font-bold">
                 First Haircut &mdash; <span className="text-brand-gold italic">$32</span>
               </h3>
-              <p className="text-gray-500 font-sans text-sm mt-2 max-w-md">
+              <p className="text-gray-500 font-sans text-base mt-2 max-w-md">
                 Welcome to the family. Try us out with a special rate on your first visit.
               </p>
             </div>

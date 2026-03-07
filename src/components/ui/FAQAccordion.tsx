@@ -26,7 +26,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
               onClick={() => setOpenIndex(isOpen ? null : index)}
               className="w-full flex items-center justify-between px-6 py-5 text-left font-sans font-medium text-brand-dark transition-colors group"
             >
-              <span className="pr-4 text-[15px]">{item.question}</span>
+              <span className="pr-4 text-base">{item.question}</span>
               <motion.div
                 animate={{ rotate: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -49,7 +49,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
                 >
                   <div className="px-6 pb-5">
                     <div className="h-px w-full bg-card-border mb-4" />
-                    <p className="text-warm-gray font-sans leading-relaxed text-[15px]">
+                    <p className="text-warm-gray font-sans leading-relaxed text-base">
                       {item.answer}
                     </p>
                   </div>

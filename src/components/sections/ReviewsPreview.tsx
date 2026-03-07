@@ -9,7 +9,7 @@ import { REVIEWS } from "@/lib/constants";
 
 export default function ReviewsPreview() {
   return (
-    <section className="py-24 px-4 sm:px-6 relative">
+    <section className="py-14 px-4 sm:px-6 relative">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <SectionHeading
@@ -21,7 +21,7 @@ export default function ReviewsPreview() {
 
         {/* 5.0 badge — large, editorial style */}
         <AnimatedSection direction="scale">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10">
             <motion.div
               whileHover={{ scale: 1.02 }}
               className="inline-flex flex-col items-center bg-card rounded-2xl px-10 py-6 shadow-sm border border-card-border/50"

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="py-24 px-4 sm:px-6">
+    <section className="py-14 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <SectionHeading

@@ -21,7 +21,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           ))}
         </div>
 
-        <blockquote className="text-warm-gray leading-relaxed font-sans text-[15px]">
+        <blockquote className="text-warm-gray leading-relaxed font-sans text-base">
           &ldquo;{review.text}&rdquo;
         </blockquote>
 
@@ -33,7 +33,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
             </span>
           </div>
           <div>
-            <p className="font-sans font-semibold text-brand-dark text-sm">
+            <p className="font-sans font-semibold text-brand-dark text-base">
               {review.author}
             </p>
             <div className="flex items-center gap-2">

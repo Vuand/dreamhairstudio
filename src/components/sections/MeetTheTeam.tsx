@@ -19,7 +19,7 @@ const card = {
 
 export default function MeetTheTeam() {
   return (
-    <section className="py-24 px-4 sm:px-6 relative overflow-hidden">
+    <section className="py-14 px-4 sm:px-6 relative overflow-hidden">
       {/* Background — warm gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream-dark/40 via-cream to-cream-dark/20" />
 

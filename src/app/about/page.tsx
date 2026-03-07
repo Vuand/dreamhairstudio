@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 px-4 sm:px-6">
+      <section className="py-14 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection>
             <SectionHeading
@@ -59,20 +59,20 @@ export default function AboutPage() {
                   <span className="italic text-brand-gold">Everyone Belongs</span>
                 </h3>
                 <div className="h-px w-16 bg-brand-gold/30" />
-                <p className="text-warm-gray font-sans leading-relaxed text-[15px]">
+                <p className="text-warm-gray font-sans leading-relaxed text-base">
                   Dream Hair Studio was founded with a simple mission: to create
                   a space where everyone feels welcome, valued, and leaves
                   looking their absolute best. Located in the heart of
                   Corvallis, Oregon, we combine the best of barbering tradition
                   with modern styling expertise.
                 </p>
-                <p className="text-warm-gray font-sans leading-relaxed text-[15px]">
+                <p className="text-warm-gray font-sans leading-relaxed text-base">
                   Our team of talented barbers and stylists brings diverse skills
                   and backgrounds together under one roof. Whether you need a
                   classic fade, a bold color transformation, or a fresh new
                   style, we have the expertise to make it happen.
                 </p>
-                <p className="text-warm-gray font-sans leading-relaxed text-[15px]">
+                <p className="text-warm-gray font-sans leading-relaxed text-base">
                   We proudly serve the Corvallis community with bilingual
                   service in English and Spanish, ensuring every client can
                   communicate their vision clearly and comfortably.
@@ -84,7 +84,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 px-4 sm:px-6 relative overflow-hidden">
+      <section className="py-14 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cream-dark/40 via-cream to-cream-dark/20" />
         <div className="max-w-6xl mx-auto relative">
           <AnimatedSection>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                   <h3 className="font-serif text-xl font-bold text-brand-dark mb-3">
                     {value.title}
                   </h3>
-                  <p className="text-warm-gray font-sans text-sm leading-relaxed">
+                  <p className="text-warm-gray font-sans text-base leading-relaxed">
                     {value.text}
                   </p>
                 </div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
       </section>
 
       {/* Photo Grid */}
-      <section className="py-24 px-4 sm:px-6">
+      <section className="py-14 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-3 gap-3 md:gap-4">
             {[
@@ -151,7 +151,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-4 sm:px-6 bg-dark-surface relative overflow-hidden noise-bg">
+      <section className="py-14 px-4 sm:px-6 bg-dark-surface relative overflow-hidden noise-bg">
         <div className="absolute inset-0 opacity-[0.03]">
           <svg className="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="none">
             <path d="M0 100 L200 0 L400 100 L200 200 Z" fill="currentColor" className="text-brand-gold" />
@@ -159,7 +159,7 @@ export default function AboutPage() {
         </div>
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white leading-tight">
               Come Experience the <span className="italic text-brand-gold">Dream</span>
             </h2>
             <p className="mt-5 text-gray-500 font-sans text-lg">

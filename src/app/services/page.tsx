@@ -35,7 +35,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <section className="py-24 px-4 sm:px-6">
+      <section className="py-14 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <AnimatedSection>
             <SectionHeading
@@ -47,7 +47,7 @@ export default function ServicesPage() {
 
           {/* New Client Special */}
           <AnimatedSection>
-            <div className="mb-14 relative overflow-hidden rounded-2xl bg-dark-surface noise-bg">
+            <div className="mb-10 relative overflow-hidden rounded-2xl bg-dark-surface noise-bg">
               <div className="absolute top-0 right-0 w-48 h-48 bg-brand-gold/5 rounded-full -translate-y-1/2 translate-x-1/2" />
               <div className="relative z-10 p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="text-center sm:text-left">
@@ -95,7 +95,7 @@ export default function ServicesPage() {
           </div>
 
           <AnimatedSection>
-            <div className="mt-14 text-center">
+            <div className="mt-10 text-center">
               <p className="text-warm-gray font-sans text-sm mb-5">
                 Prices may vary based on hair length and complexity. Consultation
                 recommended for color services.
@@ -111,7 +111,7 @@ export default function ServicesPage() {
       <ChevronDivider />
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 sm:px-6 relative overflow-hidden">
+      <section className="py-14 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cream-dark/30 via-cream to-cream-dark/20" />
         <div className="max-w-3xl mx-auto relative">
           <AnimatedSection>

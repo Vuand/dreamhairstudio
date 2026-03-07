@@ -7,7 +7,7 @@ import { BUSINESS_INFO, BUSINESS_HOURS } from "@/lib/constants";
 
 export default function VisitUsPreview() {
   return (
-    <section className="py-24 px-4 sm:px-6 relative overflow-hidden">
+    <section className="py-14 px-4 sm:px-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-cream-dark/40 via-cream to-cream-dark/20" />
 
       <div className="max-w-6xl mx-auto relative">
@@ -30,11 +30,11 @@ export default function VisitUsPreview() {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <div className="w-1 h-5 bg-brand-gold rounded-full" />
-                    <h3 className="font-serif text-lg font-bold text-brand-dark">
+                    <h3 className="font-serif text-xl font-bold text-brand-dark">
                       Address
                     </h3>
                   </div>
-                  <p className="font-sans text-warm-gray ml-3">
+                  <p className="font-sans text-warm-gray text-base ml-3">
                     {BUSINESS_INFO.address.full}
                   </p>
                   <a
@@ -53,7 +53,7 @@ export default function VisitUsPreview() {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <div className="w-1 h-5 bg-brand-gold rounded-full" />
-                    <h3 className="font-serif text-lg font-bold text-brand-dark">
+                    <h3 className="font-serif text-xl font-bold text-brand-dark">
                       Phone
                     </h3>
                   </div>
@@ -68,11 +68,11 @@ export default function VisitUsPreview() {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <div className="w-1 h-5 bg-brand-gold rounded-full" />
-                    <h3 className="font-serif text-lg font-bold text-brand-dark">
+                    <h3 className="font-serif text-xl font-bold text-brand-dark">
                       Hours
                     </h3>
                   </div>
-                  <ul className="space-y-1 font-sans text-sm ml-3">
+                  <ul className="space-y-1 font-sans text-base ml-3">
                     {BUSINESS_HOURS.map((h) => (
                       <li key={h.day} className="flex justify-between">
                         <span className="text-warm-gray">{h.day}</span>

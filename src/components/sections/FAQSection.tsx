@@ -8,7 +8,7 @@ import { FAQ_ITEMS } from "@/lib/constants";
 
 export default function FAQSection() {
   return (
-    <section className="py-24 px-4 sm:px-6 relative">
+    <section className="py-14 px-4 sm:px-6 relative">
       {/* Subtle diagonal background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] bg-brand-gold/[0.02] rounded-full" />

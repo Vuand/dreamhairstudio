@@ -4,7 +4,7 @@ interface ChevronDividerProps {
 
 export default function ChevronDivider({ className = "" }: ChevronDividerProps) {
   return (
-    <div className={`flex items-center justify-center py-4 ${className}`}>
+    <div className={`flex items-center justify-center py-2 ${className}`}>
       <div className="flex items-center gap-4">
         <div className="h-px w-12 bg-gradient-to-r from-transparent to-brand-gold/20" />
         <svg

@@ -7,7 +7,7 @@ import { BOOKING_URL } from "@/lib/constants";
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-32 px-4 sm:px-6 overflow-hidden">
+    <section className="relative py-20 px-4 sm:px-6 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
@@ -53,12 +53,12 @@ export default function FinalCTA() {
           <div className="h-px w-12 bg-brand-gold/40" />
         </div>
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1]">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.1]">
           Ready for Your
           <br />
           <span className="italic text-brand-gold">New Look?</span>
         </h2>
-        <p className="mt-6 text-gray-400 font-sans text-lg max-w-md mx-auto leading-relaxed">
+        <p className="mt-6 text-gray-400 font-sans text-xl max-w-md mx-auto leading-relaxed">
           Book your appointment today and let our talented team bring your dream style to life.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

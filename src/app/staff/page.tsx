@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function StaffPage() {
   return (
-    <section className="py-24 px-4 sm:px-6">
+    <section className="py-14 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <SectionHeading
@@ -41,10 +41,10 @@ export default function StaffPage() {
             <div className="absolute top-0 left-0 w-32 h-32 bg-brand-gold/5 rounded-full -translate-y-1/2 -translate-x-1/2" />
             <div className="absolute bottom-0 right-0 w-24 h-24 bg-brand-red/3 rounded-full translate-y-1/2 translate-x-1/2" />
             <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-brand-dark mb-4">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-4">
                 Not Sure Who to Book With?
               </h3>
-              <p className="text-warm-gray font-sans max-w-lg mx-auto mb-8 text-[15px] leading-relaxed">
+              <p className="text-warm-gray font-sans max-w-lg mx-auto mb-8 text-base leading-relaxed">
                 No worries! Book a general appointment and we&apos;ll match you
                 with the perfect stylist or barber for your needs. You can also
                 select your preferred team member during booking.

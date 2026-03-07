@@ -30,7 +30,7 @@ export default function Button({
   external = false,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center px-6 py-3 rounded-full font-sans font-semibold text-sm tracking-wide transition-all duration-300 whitespace-nowrap";
+    "inline-flex items-center justify-center px-7 py-3.5 rounded-full font-sans font-semibold text-base tracking-wide transition-all duration-300 whitespace-nowrap";
 
   if (external) {
     return (

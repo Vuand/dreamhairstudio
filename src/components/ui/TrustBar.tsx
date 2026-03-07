@@ -52,7 +52,7 @@ export default function TrustBar() {
           {TRUST_BADGES.map((badge) => (
             <motion.div key={badge.label} variants={item} className="flex items-center gap-2 text-brand-dark">
               <span className="text-brand-gold"><TrustIcon icon={badge.icon} /></span>
-              <span className="text-sm font-sans font-medium whitespace-nowrap">{badge.label}</span>
+              <span className="text-base font-sans font-medium whitespace-nowrap">{badge.label}</span>
             </motion.div>
           ))}
         </motion.div>

@@ -29,7 +29,7 @@ export default function StaffCard({ staff }: StaffCardProps) {
       <div className="p-6 -mt-4 relative flex flex-col flex-1">
         <div className="flex items-start justify-between">
           <div>
-            <h3 className="text-xl font-serif font-bold text-brand-dark">
+            <h3 className="text-2xl font-serif font-bold text-brand-dark">
               {staff.name}
             </h3>
             <p className="text-brand-gold font-sans text-xs font-semibold mt-0.5 tracking-wider uppercase">
@@ -53,7 +53,7 @@ export default function StaffCard({ staff }: StaffCardProps) {
           </div>
         )}
 
-        <p className="text-warm-gray text-sm mt-3 leading-relaxed font-sans">
+        <p className="text-warm-gray text-base mt-3 leading-relaxed font-sans">
           {staff.bio}
         </p>
 

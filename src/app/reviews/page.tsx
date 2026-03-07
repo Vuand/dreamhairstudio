@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function ReviewsPage() {
   return (
-    <section className="py-24 px-4 sm:px-6">
+    <section className="py-14 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <SectionHeading
@@ -29,7 +29,7 @@ export default function ReviewsPage() {
 
         {/* Rating Summary — editorial style */}
         <AnimatedSection direction="scale">
-          <div className="bg-card rounded-2xl p-10 md:p-14 text-center mb-14 shadow-sm border border-card-border/50 relative overflow-hidden">
+          <div className="bg-card rounded-2xl p-10 md:p-14 text-center mb-10 shadow-sm border border-card-border/50 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/[0.03] rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="relative">
               <div className="text-7xl md:text-8xl font-serif font-bold text-brand-dark italic leading-none">

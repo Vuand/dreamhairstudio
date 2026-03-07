@@ -8,7 +8,7 @@ export default function Footer() {
       {/* Gold top border */}
       <div className="h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-14 pt-6 border-t border-white/5 text-center text-xs text-gray-600 font-sans">
+        <div className="mt-10 pt-6 border-t border-white/5 text-center text-xs text-gray-600 font-sans">
           <p>
             &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
           </p>
