@@ -97,7 +97,7 @@ export default function AboutPage() {
             {[
               {
                 title: "Inclusivity",
-                text: "Everyone is welcome here. We celebrate diversity and serve clients of all ages, backgrounds, and styles. Our studio is a safe, LGBTQIA+ friendly space.",
+                text: "Everyone is welcome here. We celebrate diversity and serve clients of all ages, backgrounds, and styles.",
               },
               {
                 title: "Craftsmanship",

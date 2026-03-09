@@ -45,7 +45,7 @@ All business data lives in `src/lib/constants.ts` as the single source of truth.
 - **Tagline**: "Where Every Look Becomes a Dream"
 - **Address**: 800 NW Starker Ave Suite 23, Corvallis, OR 97330
 - **Phone**: (541) 230-9242
-- **Hours**: Mon-Wed 9-4, Thu 9-5, Fri 9-6, Sat-Sun closed
+- **Hours**: Mon-Sat 9:00 AM - 6:30 PM, Sun closed
 
 ### Staff (4 members)
 | Name | Role | Rating | Reviews |
@@ -61,10 +61,10 @@ All business data lives in `src/lib/constants.ts` as the single source of truth.
 - **Color** (14): All-Over $85+, Root Touch-Up $65+, Partial Highlights $95+, Full Highlights $120+, Balayage $150+, Ombre $140+, and more
 
 ### Additional Info
-- **Amenities**: TV, disabled access, LGBTQIA+ friendly, free parking
+- **Amenities**: TV, disabled access
 - **Payment**: Visa, MasterCard, Discover, Amex, debit, cash
 - **Languages**: English, Spanish
-- **Trust badges**: 5.0 rating, walk-ins welcome, free parking, bilingual, kid-friendly
+- **Trust badges**: 5.0 rating, walk-ins welcome, bilingual, kid-friendly
 
 ## Pages (8 total)
 

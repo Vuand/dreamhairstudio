@@ -26,9 +26,8 @@ export function getLocalBusinessJsonLd() {
       (h) => ({
         "@type": "OpeningHoursSpecification",
         dayOfWeek: h.day,
-        opens: h.day === "Friday" ? "09:00" : "09:00",
-        closes:
-          h.day === "Friday" ? "18:00" : h.day === "Thursday" ? "17:00" : "16:00",
+        opens: "09:00",
+        closes: "18:30",
       })
     ),
     aggregateRating: {

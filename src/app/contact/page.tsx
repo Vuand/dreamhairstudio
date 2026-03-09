@@ -15,11 +15,11 @@ import {
 export const metadata: Metadata = {
   title: "Contact & Location",
   description:
-    "Find Dream Hair Studio at 800 NW Starker Ave Suite 23, Corvallis, OR 97330. Free parking, walk-ins welcome. Call (541) 230-9242 or book online.",
+    "Find Dream Hair Studio at 800 NW Starker Ave Suite 23, Corvallis, OR 97330. Walk-ins welcome. Call (541) 230-9242 or book online.",
   openGraph: {
     title: "Contact & Location | Dream Hair Studio Corvallis",
     description:
-      "Visit us at 800 NW Starker Ave Suite 23, Corvallis, OR. Free parking, walk-ins welcome.",
+      "Visit us at 800 NW Starker Ave Suite 23, Corvallis, OR. Walk-ins welcome.",
   },
 };
 

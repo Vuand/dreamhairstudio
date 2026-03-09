@@ -15,7 +15,7 @@ export default function VisitUsPreview() {
           <SectionHeading
             overline="Location"
             title="Visit Us"
-            subtitle="Conveniently located in Corvallis with free parking"
+            subtitle="Conveniently located in Corvallis"
           />
         </AnimatedSection>
 

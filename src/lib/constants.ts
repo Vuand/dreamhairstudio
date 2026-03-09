@@ -31,20 +31,18 @@ export const BUSINESS_INFO: BusinessInfo = {
 };
 
 export const BUSINESS_HOURS: BusinessHours[] = [
-  { day: "Monday", hours: "9:00 AM - 4:00 PM", isOpen: true },
-  { day: "Tuesday", hours: "9:00 AM - 4:00 PM", isOpen: true },
-  { day: "Wednesday", hours: "9:00 AM - 4:00 PM", isOpen: true },
-  { day: "Thursday", hours: "9:00 AM - 5:00 PM", isOpen: true },
-  { day: "Friday", hours: "9:00 AM - 6:00 PM", isOpen: true },
-  { day: "Saturday", hours: "Closed", isOpen: false },
+  { day: "Monday", hours: "9:00 AM - 6:30 PM", isOpen: true },
+  { day: "Tuesday", hours: "9:00 AM - 6:30 PM", isOpen: true },
+  { day: "Wednesday", hours: "9:00 AM - 6:30 PM", isOpen: true },
+  { day: "Thursday", hours: "9:00 AM - 6:30 PM", isOpen: true },
+  { day: "Friday", hours: "9:00 AM - 6:30 PM", isOpen: true },
+  { day: "Saturday", hours: "9:00 AM - 6:30 PM", isOpen: true },
   { day: "Sunday", hours: "Closed", isOpen: false },
 ];
 
 export const AMENITIES: Amenity[] = [
   { icon: "tv", label: "TV" },
   { icon: "accessible", label: "Disabled Access" },
-  { icon: "pride", label: "LGBTQIA+ Friendly" },
-  { icon: "parking", label: "Free Parking" },
 ];
 
 export const PAYMENT_METHODS = [
@@ -186,7 +184,6 @@ export const REVIEWS: Review[] = [
 export const TRUST_BADGES: TrustBadge[] = [
   { icon: "star", label: "5.0 Rating" },
   { icon: "walk-in", label: "Walk-Ins Welcome" },
-  { icon: "parking", label: "Free Parking" },
   { icon: "language", label: "Bilingual (EN/ES)" },
   { icon: "child", label: "Kid-Friendly" },
 ];
@@ -218,11 +215,6 @@ export const FAQ_ITEMS: FAQItem[] = [
       "We accept Visa, MasterCard, Discover, American Express, debit cards, and cash.",
   },
   {
-    question: "Is there free parking?",
-    answer:
-      "Yes! We have free parking available right outside our studio for your convenience.",
-  },
-  {
     question: "Do you have Spanish-speaking staff?",
     answer:
       "Yes! We proudly offer bilingual service in both English and Spanish. Everyone is welcome at Dream Hair Studio.",
@@ -252,7 +244,7 @@ export const WHY_CHOOSE_US = [
   },
   {
     title: "Convenient Location",
-    description: "Easy to find with free parking in Corvallis",
+    description: "Easy to find in the heart of Corvallis",
     icon: "map-pin",
   },
   {
