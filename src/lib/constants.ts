@@ -28,6 +28,7 @@ export const BUSINESS_INFO: BusinessInfo = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.123456789!2d-123.28!3d44.57!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sDream+Hair+Studio!5e0!3m2!1sen!2sus!4v1234567890",
   googleMapsUrl: "https://maps.google.com/?q=Dream+Hair+Studio+800+NW+Starker+Ave+Suite+23+Corvallis+OR+97330",
   coordinates: { lat: 44.5704, lng: -123.2801 },
+  instagramUrl: "https://www.instagram.com/dreamstudio2065/",
 };
 
 export const BUSINESS_HOURS: BusinessHours[] = [

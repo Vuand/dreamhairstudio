@@ -14,6 +14,7 @@ export interface BusinessInfo {
   googleMapsEmbed: string;
   googleMapsUrl: string;
   coordinates: { lat: number; lng: number };
+  instagramUrl: string;
 }
 
 export interface BusinessHours {
