@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-type ButtonVariant = "primary" | "secondary" | "outline" | "gold";
+type ButtonVariant = "primary" | "secondary" | "outline" | "outline-light" | "gold";
 
 interface ButtonProps {
   href: string;
@@ -14,12 +14,14 @@ interface ButtonProps {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-brand-red text-white hover:bg-brand-red-dark shadow-lg hover:shadow-xl",
+    "bg-brand-red text-white hover:bg-brand-red-dark focus-visible:ring-brand-red shadow-lg hover:shadow-xl",
   secondary:
-    "bg-dark-surface text-cream hover:opacity-90 shadow-lg hover:shadow-xl",
+    "bg-dark-surface text-cream hover:opacity-90 focus-visible:ring-brand-gold shadow-lg hover:shadow-xl",
   outline:
-    "border-2 border-card-border text-brand-dark hover:bg-brand-dark hover:text-cream",
-  gold: "bg-brand-gold text-white hover:bg-brand-gold-light hover:text-brand-dark shadow-lg",
+    "border-2 border-card-border text-brand-dark hover:bg-brand-dark hover:text-white focus-visible:ring-brand-dark",
+  "outline-light":
+    "border-2 border-white/25 text-white hover:bg-white hover:text-brand-dark focus-visible:ring-white",
+  gold: "bg-brand-gold text-white hover:bg-brand-gold-light hover:text-brand-dark focus-visible:ring-brand-gold shadow-lg",
 };
 
 export default function Button({
@@ -30,7 +32,7 @@ export default function Button({
   external = false,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center px-7 py-3.5 rounded-full font-sans font-semibold text-base tracking-wide transition-all duration-300 whitespace-nowrap";
+    "inline-flex items-center justify-center px-7 py-3.5 rounded-full font-sans font-semibold text-base tracking-wide transition-all duration-300 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent";
 
   if (external) {
     return (

@@ -114,7 +114,7 @@ export default function HeroSection() {
               <Button href={BOOKING_URL} variant="primary" external className="px-10 py-4 text-base">
                 Book Your Appointment
               </Button>
-              <Button href="/services" variant="outline" className="px-8 py-4 text-base border-white/20 text-white hover:bg-white hover:text-brand-dark">
+              <Button href="/services" variant="outline-light" className="px-8 py-4 text-base">
                 View Services & Pricing
               </Button>
             </motion.div>

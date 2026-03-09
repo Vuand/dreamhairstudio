@@ -65,7 +65,7 @@ export default function FinalCTA() {
           <Button href={BOOKING_URL} variant="primary" external className="px-10 py-4 text-base">
             Book Your Appointment
           </Button>
-          <Button href="/contact" variant="outline" className="px-8 py-4 text-base border-white/20 text-white hover:bg-white hover:text-brand-dark">
+          <Button href="/contact" variant="outline-light" className="px-8 py-4 text-base">
             Contact Us
           </Button>
         </div>

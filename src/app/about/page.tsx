@@ -169,7 +169,7 @@ export default function AboutPage() {
               <Button href={BOOKING_URL} variant="primary" external className="px-10">
                 Book Now
               </Button>
-              <Button href="/staff" variant="outline" className="border-white/20 text-white hover:bg-white hover:text-brand-dark">
+              <Button href="/staff" variant="outline-light">
                 Meet the Team
               </Button>
             </div>
